@@ -1,0 +1,26 @@
+{
+    "name": "cowlby/php-hue-bindings",
+    "description": "PHP bindings for the Philips Hue platform.",
+    "type": "library",
+    "keywords": ["home automation", "hue", "api bindings"],
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "Jose Prado",
+            "email": "cowlby@me.com"
+        }
+    ],
+
+    "require": {
+        "pimple/pimple": "1.0.*"
+        "guzzle/guzzle": "dev-master"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Cowlby\\Hue": "src/",
+            "Cowlby\\Tests\\Hue": "tests/"
+        }
+    }
+}
