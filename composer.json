@@ -13,8 +13,9 @@
     ],
 
     "require": {
-        "pimple/pimple": "1.0.*"
-        "guzzle/guzzle": "dev-master"
+        "pimple/pimple": "1.0.*",
+        "guzzle/guzzle": "dev-master",
+        "symfony/dom-crawler": "dev-master"
     },
 
     "autoload": {

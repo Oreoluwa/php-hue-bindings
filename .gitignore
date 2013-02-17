@@ -1,7 +1,9 @@
 vendor
 tests/sandbox.php
+tests/discover.php
 composer.lock
 /phpunit.xml
 .settings
 .buildpath
 .project
+composer.phar

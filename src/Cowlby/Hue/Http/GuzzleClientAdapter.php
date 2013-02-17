@@ -44,6 +44,15 @@ class GuzzleClientAdapter implements ClientAdapterInterface
     }
 
     /**
+     * {@inheritDoc}
+     */
+    public function put($uri, $body = NULL)
+    {
+        $request = $this->client->put($uri, NULL, $body);
+        return $this->send($request);
+    }
+
+    /**
      * Sends the passed Request and returns the response or a hydrated object.
      *
      * @param RequestInterface $request The Request to send.
@@ -53,7 +62,7 @@ class GuzzleClientAdapter implements ClientAdapterInterface
     {
         $response = $this->client->send($request);
 
-        $body = $response->getBody();
+        $body = $response->getBody(true);
 
         return $body;
     }

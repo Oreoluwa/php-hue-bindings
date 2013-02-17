@@ -2,17 +2,21 @@
 
 namespace Cowlby\Hue;
 
+use Cowlby\Hue\Entity\Light;
+
 interface LightManagerInterface
 {
-    public function turnOn();
-
     public function findAll();
 
-//     public function turnOff();
+    public function find($id);
+
+    public function turnOn(Light $light);
+
+    public function turnOff(Light $light);
 
 //     public function setBrightness();
 
 //     public function setHue();
 
-//     public function setState(array $state);
+    public function changeState($id, array $state);
 }
